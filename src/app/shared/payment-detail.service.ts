@@ -9,7 +9,7 @@ export class PaymentDetailService {
 
   constructor(private http: HttpClient) { }
 
-  readonly baseURL = 'http://localhost:61236/api/PaymentDetail'
+  readonly baseURL = 'http://localhost:5000/api/PaymentDetail'
   formData: PaymentDetail = new PaymentDetail();
   list: PaymentDetail[];
 
@@ -30,6 +30,4 @@ export class PaymentDetailService {
       .toPromise()
       .then(res =>this.list = res as PaymentDetail[]);
   }
-
-
 }
