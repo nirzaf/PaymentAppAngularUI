@@ -28,6 +28,6 @@ export class PaymentDetailService {
   refreshList() {
     this.http.get(this.baseURL)
       .toPromise()
-      .then(res =>this.list = res as PaymentDetail[]);
+      .then(res => this.list = res as PaymentDetail[]);
   }
 }
